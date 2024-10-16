@@ -7,9 +7,9 @@ from PIL import Image
 st.title('Land Cover Analysis Clustering with K-Means')
 st.subheader('Project Data Mining oleh Muhammad Nefrit Mahardika, Rafa Agustant, dan Farhan Karisma')
 
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
+uploaded_file = st.file_uploader("Upload gambar...", type=["jpg", "png", "jpeg"])
 
-clusters = st.selectbox('Select number of clusters (2-5):', options=[2, 3, 4, 5])
+clusters = st.selectbox('Pilih berapa cluster yang ingin dibuat (2-5):', options=[2, 3, 4, 5])
 
 def kmeans_clustering(image, n_clusters):
 
